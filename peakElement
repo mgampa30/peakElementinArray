@@ -1,0 +1,15 @@
+import java.util.Arrays;
+
+class peakElement {
+    public static void main(String[] args) {
+        int[] arr = {5,10,20,15};
+        peakElement(arr);
+    }
+public static void peakElement(int[] arr){
+    for(int i =1;i<arr.length-1;i++){
+        if(arr[i]>=arr[i-1] && arr[i]>arr[i+1]){
+                System.out.println("The peak element in the array is: " +arr[i]);
+            }
+        }
+    }
+}
